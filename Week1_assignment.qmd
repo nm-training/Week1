@@ -14,10 +14,9 @@ editor: visual
 -   `is_smoker` as FALSE
 
 ```{r}
-name <- "John"
-age <- 28
-weight_kg <- 70.5
-is_smoker <- FALSE
+
+
+
 ```
 
 ### Task 2. Perform and display the following:
@@ -28,10 +27,11 @@ is_smoker <- FALSE
 -   Check if `is_smoker` is TRUE
 
 ```{r}
-age + 5
-weight_kg * 2.2
-age > 18
-is_smoker == TRUE
+
+
+
+
+
 ```
 
 ## Part 2: Decision Making and Loops
@@ -47,16 +47,9 @@ Write an if-else block to classify age group:
 Check if `age` of 20 is displaying correct age group.
 
 ```{r}
-age <- 20
 
-# Classification
-if (age < 18) {
-  print("Minor")
-} else if (age < 60) {
-  print("Adult")
-} else {
-  print("Senior")
-}
+
+
 ```
 
 ### Tasks 4: Switch
@@ -70,14 +63,11 @@ Write a switch to select a health plan:
 Check for monthly cost for premium plan.
 
 ```{r}
-# Switch case
-plan <- "premium"
-print(
-  switch(plan,
-         basic = "Basic Plan: $100/month",
-         premium = "Premium Plan: $200/month",
-         vip = "VIP Plan: $500/month")
-)
+
+
+
+
+
 ```
 
 ### Task 5: Loop
@@ -91,13 +81,10 @@ Create a Rocket Launch Countdown:
 -   After the loop finishes, a final message `"🚀 Lift off!"` is shown
 
 ```{r}
-# Countdown from 10 to 1
-for (i in 10:1) {
-  print(paste("T-minus", i))
-}
 
-# Print launch message after the countdown
-print("🚀 Lift off!")
+
+
+
 
 ```
 
@@ -110,12 +97,11 @@ Create a function `bmi_calc(weight, height)` that returns `BMI = weight / height
 Call the function with `weight = 70` and `height = 1.75`.
 
 ```{r}
-bmi_calc <- function(weight, height) {
-  bmi <- weight / (height^2)
-  return(bmi)
-}
 
-bmi_calc(70, 1.75)
+
+
+
+
 ```
 
 ## Part 4: Vectors and Lists
@@ -129,9 +115,10 @@ Find the average using mean()
 Return values \> 120 using filtering
 
 ```{r}
-bp <- c(120, 125, 118, 135, 110)
-mean(bp)
-bp[bp > 120]
+
+
+
+
 ```
 
 ### Task 7: Lists
@@ -145,15 +132,12 @@ bp[bp > 120]
 2.  Access each item using \$
 
 ```{r}
-patient <- list(
-  name = "John",
-  age = 28,
-  cholesterol = c(200, 180, 190)
-)
 
-patient$name
-patient$age
-patient$cholesterol
+
+
+
+
+
 ```
 
 ## Part 5: Data Frames and Import
@@ -168,14 +152,12 @@ patient$cholesterol
 -   Filter people older than 30
 
 ```{r}
-df <- data.frame(
-  Name = c("John", "Jane", "Alice"),
-  Age = c(28, 35, 40),
-  Smoker = c(FALSE, TRUE, FALSE)
-)
 
-str(df)
-df[df$Age > 30, ]
+
+
+
+
+
 
 ```
 
@@ -186,8 +168,10 @@ df[df$Age > 30, ]
 -   Read the xpt file back using xpt
 
 ```{r}
-data(cars)
 
-write_xpt(cars, "data/cars.xpt", version=5)
-df_read <- read_xpt("data/cars.xpt")
+
+
+
+
+
 ```
