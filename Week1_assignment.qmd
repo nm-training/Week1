@@ -1,5 +1,6 @@
 ---
 title: "Week 1 Assignment"
+author: "R Trainer: Binod Jung Bogati (linkedin.com/in/bjungbogati)"
 format: html
 editor: visual
 ---
